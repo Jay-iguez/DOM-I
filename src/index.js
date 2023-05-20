@@ -59,6 +59,7 @@ const navItemThree = document.querySelector(".container nav a:nth-child(3)")
 const navItemFour = document.querySelector(".container nav a:nth-child(4)")
 const navItemFive = document.querySelector(".container nav a:nth-child(5)")
 const navItemSix = document.querySelector(".container nav a:nth-child(6)")
+const navAllItems = document.querySelectorAll(".container nav a")
 
 navItemOne.textContent = siteContent.nav["nav-item-1"]
 navItemTwo.textContent = siteContent.nav["nav-item-2"]
@@ -66,4 +67,14 @@ navItemThree.textContent = siteContent.nav["nav-item-3"]
 navItemFour.textContent = siteContent.nav["nav-item-4"]
 navItemFive.textContent = siteContent.nav["nav-item-5"]
 navItemSix.textContent = siteContent.nav["nav-item-6"]
+navAllItems.forEach(element => {
+  element.className = "italic"
+})
 // navigation end
+
+// Call To Action
+const headingCall = document.querySelector(".cta-text h1")
+const buttonCall = document.querySelector(".cta-text button")
+
+headingCall.textContent = siteContent.cta.h1
+buttonCall.textContent = siteContent.cta.button
