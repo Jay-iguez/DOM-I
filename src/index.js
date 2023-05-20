@@ -40,3 +40,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const mainImage = document.querySelector("#cta-img")
+
+mainImage.src = siteContent.images["cta-img"]
