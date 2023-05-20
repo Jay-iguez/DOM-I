@@ -41,6 +41,29 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!')
 
-const mainImage = document.querySelector("#cta-img")
+// images
+const logoImage = document.querySelector("#logo-img")
+const callImage = document.querySelector("#cta-img")
+const middleImage = document.querySelector("#middle-img")
 
-mainImage.src = siteContent.images["cta-img"]
+
+callImage.src = siteContent.images["cta-img"]
+logoImage.src = siteContent.images["logo-img"]
+middleImage.src = siteContent.images["accent-img"]
+// images - end
+
+// navigation
+const navItemOne = document.querySelector(".container nav a:nth-child(1)")
+const navItemTwo = document.querySelector(".container nav a:nth-child(2)")
+const navItemThree = document.querySelector(".container nav a:nth-child(3)")
+const navItemFour = document.querySelector(".container nav a:nth-child(4)")
+const navItemFive = document.querySelector(".container nav a:nth-child(5)")
+const navItemSix = document.querySelector(".container nav a:nth-child(6)")
+
+navItemOne.textContent = siteContent.nav["nav-item-1"]
+navItemTwo.textContent = siteContent.nav["nav-item-2"]
+navItemThree.textContent = siteContent.nav["nav-item-3"]
+navItemFour.textContent = siteContent.nav["nav-item-4"]
+navItemFive.textContent = siteContent.nav["nav-item-5"]
+navItemSix.textContent = siteContent.nav["nav-item-6"]
+// navigation end
