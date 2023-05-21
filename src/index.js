@@ -110,3 +110,25 @@ visionHeading.className = "text-content 3"
 
 const visionH4 = visionHeading.querySelector("h4").textContent = siteContent["main-content"]["vision-h4"]
 const visionP = visionHeading.querySelector("p").textContent = siteContent["main-content"]["vision-content"]
+// main content end
+
+//contact
+const contactInfo = document.querySelector(".contact")
+
+const contactHeader = contactInfo.querySelector("h4").textContent = siteContent["contact"]["contact-h4"]
+
+const contactAddress = contactInfo.querySelector("p").textContent = siteContent["contact"]["address"]
+
+const contactPhone = contactInfo.querySelector("p:nth-child(3)")
+contactPhone.textContent = siteContent["contact"]["phone"]
+
+const contactMail = contactInfo.querySelector("p:nth-child(4)")
+contactMail.textContent = siteContent["contact"]["email"]
+// contact end
+
+//footer
+const copyrightText = document.querySelector("footer a")
+copyrightText.textContent = siteContent["footer"]["copyright"]
+
+copyrightText.className = "bold"
+
