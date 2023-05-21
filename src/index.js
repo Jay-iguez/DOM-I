@@ -78,3 +78,17 @@ const buttonCall = document.querySelector(".cta-text button")
 
 headingCall.textContent = siteContent.cta.h1
 buttonCall.textContent = siteContent.cta.button
+// Call To Action end
+
+// main content
+const featuresHeading = document.querySelector(".top-content .text-content")
+featuresHeading.className = "text-content 1"
+
+const featuresH4 = featuresHeading.querySelector("h4").textContent = siteContent["main-content"]["features-h4"]
+const featuresP = featuresHeading.querySelector("p").textContent = siteContent["main-content"]["features-content"]
+
+const aboutHeading = document.querySelector(".top-content .text-content:nth-child(2)")
+aboutHeading.className = "text-content 2"
+
+const aboutH4 = aboutHeading.querySelector("h4").textContent = siteContent["main-content"]["about-h4"]
+const aboutP = aboutHeading.querySelector("p").textContent = siteContent["main-content"]["about-content"]
