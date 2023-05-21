@@ -92,3 +92,21 @@ aboutHeading.className = "text-content 2"
 
 const aboutH4 = aboutHeading.querySelector("h4").textContent = siteContent["main-content"]["about-h4"]
 const aboutP = aboutHeading.querySelector("p").textContent = siteContent["main-content"]["about-content"]
+
+const servicesHeading = document.querySelector(".bottom-content .text-content")
+servicesHeading.className = "text-content 1"
+
+const servicesH4 = servicesHeading.querySelector("h4").textContent = siteContent["main-content"]["services-h4"]
+const servicesP = servicesHeading.querySelector("p").textContent = siteContent["main-content"]["services-content"]
+
+const productHeading = document.querySelector(".bottom-content .text-content:nth-child(2)")
+productHeading.className = "text-content 2"
+
+const productH4 = productHeading.querySelector("h4").textContent = siteContent["main-content"]["product-h4"]
+const productP = productHeading.querySelector("p").textContent = siteContent["main-content"]["product-content"]
+
+const visionHeading = document.querySelector(".bottom-content .text-content:nth-child(3")
+visionHeading.className = "text-content 3"
+
+const visionH4 = visionHeading.querySelector("h4").textContent = siteContent["main-content"]["vision-h4"]
+const visionP = visionHeading.querySelector("p").textContent = siteContent["main-content"]["vision-content"]
